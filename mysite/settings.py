@@ -26,6 +26,7 @@ SECRET_KEY = 'zmy%0%+$wgmkh25q^l=(d)a96#nzgj27jh^@*u8ua&pxulkl!y'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+APPEND_SLASH=False
 
 
 # Application definition
@@ -43,7 +44,6 @@ INSTALLED_APPS = (
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
